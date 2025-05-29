@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11 Meses con mi Yoselin ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">¡11 Meses de Amor! 💕</h1>
+            <p class="subtitle">Para la mujer más especial del mundo: Yoselin 🍰</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎉 ¡Hemos sobrevivido juntos! 🎉</h2>
+            <div class="counter" id="monthCounter">11 meses</div>
+            <p style="text-align: center; font-size: 1.3em;">Meses de risas, alegrias, y de mucho amor </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">⏰ Tiempo Exacto de Enamoramiento</h2>
+            <div class="countdown" id="countdown">
+                <div class="time-unit">
+                    <div class="time-number" id="days">334</div>
+                    <div class="time-label">Días</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-number" id="hours">8016</div>
+                    <div class="time-label">Horas</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-number" id="minutes">480960</div>
+                    <div class="time-label">Minutos</div>
+                </div>
+                <div class="time-unit">
+                    <div class="time-number" id="kisses">∞</div>
+                    <div class="time-label">Besos</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📸 Nuestros Momentos Especiales</h2>
+            <div class="memories-grid">
+                <div class="memory-card" onclick="showMemory(1)">
+                    <video src="resources/felicidad.mp4" class="memory-video" controls muted onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        abre desde el pc si no te sirve el video mamol.
+                    </video>                    <div class="photo-placeholder" style="display: none;">📷</div>
+                    <h3>awww que tierno</h3>
+                    <p>No puedes imaginar lo feliz que estaba ese dia</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(2)">
+                    <img src="resources/cumpleCaldero.jpg" alt="cumpleCaldero" class="memory-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">💕</div>
+                    <h3>comida con mi family</h3>
+                    <p>ese dia estaba feliz pq ibamos a comer el super caldero y estabas tu en mi cumplee 🙈</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(3)">
+                    <video src="resources/tiktok.mp4" class="memory-video" controls muted onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        abre desde el pc si no te sirve el video mamol.
+                    </video>
+                    <div class="photo-placeholder" style="display: none;">🎬</div>
+                    <h3>Maratón de tiktoks</h3>
+                    <p>el dia que grabamos tiktoks romanticos y graciosos jajaj</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(4)">
+                    <video src="resources/maquillaje.mp4" class="memory-video" controls muted onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        abre desde el pc si no te sirve el video mamol.
+                    </video>                    <div class="photo-placeholder" style="display: none;">🎂</div>
+                    <h3>boleteada</h3>
+                    <p>el dia que me maquillaste y me hiciste vestir de mujer (quede diva total)</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(5)">
+                    <img src="resources/snoppy.jpg" alt="cumpleCaldero" class="memory-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">💕</div>
+                    <h3>el snoopy</h3>
+                    <p>nuestro snoopy hecho por nosotros mismos jajaja</p>
+                </div>
+                <div class="memory-card" onclick="showMemory(6)">
+                    <img src="resources/eseDia.jpg" alt="cumpleCaldero" class="memory-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">💕</div>
+                    <h3>Ese dia</h3>
+                    <p>como olvidar ese dia cuando tuvimos esa super charla con mi mom 🙈</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💝 ¿Por qué te amo? (Lista no exhaustiva)</h2>
+            <div class="reasons-list">
+                <div class="reason">💫 Porque tienes la risa más contagiosa del mundo</div>
+                <div class="reason">🍕 Porque compartimos el mismo amor obsesivo por el desgranado</div>
+                <div class="reason">💕 Porque eres la niña mas adorable del planeta</div>
+                <div class="reason">🎵 Porque te gustan las canciones que a mi me gustan</div>
+                <div class="reason">💪 Porque eres más fuerte que yo aunque no lo creas</div>
+                <div class="reason">🌟 Porque haces que cada día sea una aventura</div>
+                <div class="reason">🤗 Porque das los mejores abrazos del universo</div>
+                <div class="reason">😂 Porque te ríes de mis chistes malos (la mayoría)</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎁 Caja de Sorpresas</h2>
+            <div class="surprise-box" onclick="openSurprise()">
+                <h3>¡Haz clic aquí para una sorpresa! 🎁</h3>
+                <p>abre varias veces jaja</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💌 Mensaje del Corazón</h2>
+            <div class="message-box">
+                <p><strong>Mi querida tortona,</strong></p>
+                <p>Han pasado 11 meses desde que decidiste aguantarme y, honestamente, no sé si eres muy valiente o un poquito loca... ¡pero me encanta! 😄</p>
+                <p>Estos meses han sido como una montaña rusa: hemos reído, hemos peleado por tonterías y hasta llorado, y aunque en estos momentos la distancia sea un obstaculo hemos creado miles de recuerdos que guardaré por siempre.</p>
+                <p>Gracias por ser mi compañera con la que me desahogo, mi cómplice, mi persona favorita, y la persona que hace que hasta los lunes se sientan especiales. ✨</p>
+                <p>¡Aquí van por muchos meses más de amor, risas y aventuras juntos!</p>
+                <p><strong>Con todo mi amor,<br>abrahansito,Tu novio favorito 💕</strong></p>
+            </div>
+        </div>
+
+        <div class="section" style="text-align: center;">
+            <h2 class="section-title">🎮 Zona Interactiva</h2>
+            <button class="love-button" onclick="sendLove()">Enviar  besitos  💝</button>
+            <button class="love-button" onclick="playMusic()">Nuestra Canción 🎵</button>
+            <button class="love-button" onclick="generateCompliment()">Piropo Random 😘</button>
+            <button class="love-button" onclick="futurePlans()">Planes Futuros 🚀</button>
+        </div>
+    </div>
+
+    <script>
+        // Crear corazones flotantes
+        function createFloatingHearts() {
+            const heartsContainer = document.querySelector('.floating-hearts');
+            const hearts = ['💖', '💕', '💗', '💝', '💘', '💞'];
+            
+            setInterval(() => {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                heartsContainer.appendChild(heart);
+                
+                setTimeout(() => {
+                    heart.remove();
+                }, 6000);
+            }, 1000);
+        }
+
+        // Mostrar memorias
+        function showMemory(num) {
+            const messages = [
+                '',
+                '¡Esa primera cita! Recuerdo que estabas tan nerviosa que pediste agua... ¡tres veces! 😂',
+                'Ese momento fue mágico... aunque después me dijiste que lo practicaste frente al espejo 🪞',
+                'Esa noche descubrí que roncar puede ser adorable... ¡pero solo cuando lo haces tú! 💤',
+                'El pastel quedó como carbón, pero tu cara de felicidad fue el mejor regalo 🎂❤️'
+            ];
+            alert(messages[num]);
+        }
+
+        // Abrir sorpresa
+        function openSurprise() {
+            const surprises = [
+                '🎉 ¡Sorpresa! Te amo más que al pan de corazon... ¡y eso ya es mucho!',
+                '🌟 Dato curioso: Sonríes aproximadamente 847 veces al día cuando estás conmigo',
+                '🎁 Tu premio por ser increíble: ¡Un abrazo de oso gigante! 🤗',
+                '💝 Sorpresa: Eres oficialmente la novia más perfecta del mundo',
+                '🎪 Dato curioso: ayer te ame menos que hoy y hoy te ame menos que mañana!!'
+            ];
+            alert(surprises[Math.floor(Math.random() * surprises.length)]);
+        }
+
+        // Enviar amor
+        function sendLove() {
+            alert('💝 ¡besito recibido! Ha llegado directamente a mi corazón en 0.001 segundos 📡💕');
+        }
+
+        // Tocar música
+        function playMusic() {
+            alert('🎵 Reproduciendo "nuestra canción" 🎤');
+        }
+
+        // Generar piropo
+        function generateCompliment() {
+            const compliments = [
+                '¿Eres un diccionario? Porque le das significado a mi vida 📚💕',
+                'Si fueras una hamburguesa serías una McHermosa 🍔✨',
+                '¿Eres WiFi? Porque siento una conexión muy fuerte 📶💖',
+                'Eres como mi café favorito: dulce, caliente y me despierta cada mañana ☕💕',
+                '¿Eres Google? Porque tienes todo lo que busco 🔍❤️',
+                'eres la burra que mas patea en mi corazon jajajajaa👑'
+            ];
+            alert(compliments[Math.floor(Math.random() * compliments.length)]);
+        }
+
+        // Planes futuros
+        function futurePlans() {
+            const plans = [
+                '🏠 Mes 12: carpe nuestra segunda casa jajaja',
+                '🎂 Mes 15: Celebrar que ya sabemos todos nuestros gustos raros',
+                '🏖️ Mes 18: Primer viaje juntos solos',
+                '💍 Mes 24: Dos años de aguantarnos mutuamente ¡logro desbloqueado!',
+                '🐕 Mes 30: Tal vez adoptar un gatico (di que si porfa)',
+                '🏡 Futuro: Una casa con muyyyy grande para nuestras aventuras'
+            ];
+            alert(plans[Math.floor(Math.random() * plans.length)]);
+        }
+
+        // Inicializar
+        createFloatingHearts();
+
+        // Actualizar contador cada segundo (solo visual)
+        setInterval(() => {
+            const counter = document.getElementById('monthCounter');
+            counter.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                counter.style.transform = 'scale(1)';
+            }, 200);
+        }, 5000);
+    </script>
+</body>
+</html>
